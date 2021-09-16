@@ -1,0 +1,14 @@
+{
+    "name": "devmauro/calculator",
+    "description": "sample package",
+    "autoload": {
+        "psr-4": {
+            "Devmauro\\Calculator\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@docentemaurocasadei"
+      }
+}
