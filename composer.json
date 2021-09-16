@@ -6,6 +6,10 @@
             "Devmauro\\Calculator\\": "src/"
         }
     },
+    "author": {
+        "name":"Mauro Casadei",
+        "email":"docentemaurocasadei@gmail.com"
+    },
     "minimum-stability": "dev",
     "require": {},
     "publishConfig": {
