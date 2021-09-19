@@ -16,7 +16,7 @@ class CalculatorServiceProvider extends ServiceProvider
         $this->app->make('Devmauro\Calculator\CalculatorController');
         $this->loadViewsFrom(__DIR__.'/views', 'calculator');
 
-        $this->app->bind(Calcola::class, function($app) {
+        $this->app->bind('calcola', function($app) {
             return new Calcola();
         });
     }
