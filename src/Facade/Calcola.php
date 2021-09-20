@@ -8,6 +8,6 @@ class Calcola extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'calcola';
+        return \Devmauro\Calculator\Calcola::class;
     }
 }

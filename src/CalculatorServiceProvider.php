@@ -14,9 +14,9 @@ class CalculatorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->make('Devmauro\Calculator\CalculatorController');
-        $this->loadViewsFrom(__DIR__.'/views', 'calculator');
+        $this->loadViewsFrom(__DIR__ . '/views', 'calculator');
 
-        $this->app->bind('calcola', function($app) {
+        $this->app->bind(Calcola::class, function ($app) {
             return new Calcola();
         });
     }
@@ -28,6 +28,6 @@ class CalculatorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__.'/routes.php';
+        include __DIR__ . '/routes.php';
     }
 }

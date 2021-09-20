@@ -4,7 +4,7 @@ namespace Devmauro\Calculator;
 
 class Calcola
 {
-    private $result;
+    protected $result;
 
     public function __construct()
     {
